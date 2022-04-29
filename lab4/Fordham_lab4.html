@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Blake Fordham -->
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Lab 4">
+    <meta name="author" content="Blake Fordham">
+    <meta name="description" content="Lab 4 Assignment">
+    <title>Lab 4</title>
+
+    <style>
+    	body {
+    		background-color: #003366;
+    	}
+    	.grid_container {
+    		display: grid;
+    		justify-content: center;
+    		height: 500px;
+    		grid-template-columns: auto auto auto;
+    		gap: 15px;
+    		padding: 15px;
+    	}
+    		@media screen and (max-wdith: 1024px) {
+    			.grid_container {
+    				display: grid;
+    				grid-template-columns: auto; }
+    		}
+    		@media screen and (max-width: 768px) {
+    			body {background: #c39797;}
+    			.grid_container {
+    				display: grid;
+    				grid-template-columns: auto; }
+    		}
+    </style>
+</head>
+<body>
+	
+	<div id="body_color">
+	<div class="grid_container">
+	<div><img src="images/sky.jpg" width="100%" height="100%" alt="sky"></div>
+	<div><img src="images/sky.jpg" width="100%" height="100%" alt="sky"></div>
+	<div><img src="images/sky.jpg" width="100%" height="100%" alt="sky"></div>
+
+	<p><button type="button" onclick="myFunction()">Set Background Color</button></p>
+
+	<script>
+		/*comment*/
+		function myFunction() {
+			document.body.style.backgroundColor = "#cd0000";
+		}
+	</script>
+	</div>
+	</div>
+</body>
+</html>
